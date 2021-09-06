@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features=".//src//test//resources",
 		glue="com.telecom.stepdefinition",
-		plugin = "html:traget",
+		plugin = {"html:traget","json:target/reports.json"},
 		monochrome = true,
 		dryRun=false
 		
